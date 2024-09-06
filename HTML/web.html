@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Condition Predictor</title>
+    <link rel="stylesheet" href="../static/web_css.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Monitoring Using Wearable Devices</h1>
+        <form id="prediction-form">
+            <label for="resting-heart-rate">Resting Heart Rate:</label>
+            <input type="number" id="resting-heart-rate" name="Resting Heart Rate" required>
+
+            <label for="average-heart-rate">Average Heart Rate:</label>
+            <input type="number" id="average-heart-rate" name="Average Heart Rate" required>
+
+            <label for="max-heart-rate">Max Heart Rate:</label>
+            <input type="number" id="max-heart-rate" name="Max Heart Rate" required>
+
+            <label for="step-count">Step Count:</label>
+            <input type="number" id="step-count" name="Step Count" required>
+
+            <label for="distance-traveled">Distance Traveled (km):</label>
+            <input type="number" id="distance-traveled" name="Distance Traveled" step="0.1" required>
+
+            <label for="calories-burned">Calories Burned:</label>
+            <input type="number" id="calories-burned" name="Calories Burned" required>
+
+            <label for="activity-duration">Activity Duration (mins):</label>
+            <input type="number" id="activity-duration" name="Activity Duration" required>
+
+            <label for="total-sleep-duration">Total Sleep Duration (mins):</label>
+            <input type="number" id="total-sleep-duration" name="Total Sleep Duration" required>
+
+            <label for="sleep-interruptions">Sleep Interruptions:</label>
+            <input type="number" id="sleep-interruptions" name="Sleep Interruptions" required>
+
+            <label for="blood-oxygen-levels">Blood Oxygen Levels (%):</label>
+            <input type="number" id="blood-oxygen-levels" name="Blood Oxygen Levels" required>
+
+            <label for="skin-temperature">Skin Temperature (°C):</label>
+            <input type="number" id="skin-temperature" name="Skin Temperature" step="0.1" required>
+
+            <button type="submit">Predict Health Condition</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="../static/web_js.js"></script>
+</body>
+</html>
+
